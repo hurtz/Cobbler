@@ -26,7 +26,7 @@ allow_duplicate_macs: 0
 # # # /var/log/cobbler/anamon/.  NOTE: This does allow an xmlrpc call to send logs
 # # # to this directory, without authentication, so enable only if you are
 # # # ok with this limitation.
-anamon_enabled: 0
+anamon_enabled: 1
 
 # Email out a report when cobbler finishes installing a system.
 # enabled: set to 1 to turn this feature on
