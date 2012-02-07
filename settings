@@ -119,7 +119,7 @@ enable_menu: 1
 # you will need to mirror Fedora/EPEL packages for this feature, so see
 # https://fedorahosted.org/cobbler/wiki/ManageYumRepos if you want cobbler
 # to help you with this
-func_auto_setup: 1
+func_auto_setup: 0
 func_master: cobbler
 
 # change this port if Apache is not running plaintext on port
@@ -167,7 +167,7 @@ mgmt_parameters:
 # if enabled, this setting ensures that puppet is installed during
 # machine provision, a client certificate is generated and a
 # certificate signing request is made with the puppet master server
-puppet_auto_setup: 1
+puppet_auto_setup: 0
 
 # when puppet starts on a system after installation it needs to have
 # its certificate signed by the puppet master server. Enabling the
@@ -402,3 +402,4 @@ safe_templating_whitelist:
    - silent
    - slurp
    - raw
+default_password_crypted: "$1$H2O$IMoVKEKqeYh6QQybJQjSa."
